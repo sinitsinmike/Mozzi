@@ -59,7 +59,7 @@ Your browser does not support the audio element. </audio>
 
 ## Features
 -    Available for a wide and growing range of MCUs, with and without inbuilt DACs: Arduino Uno R3 and R4, STM32, Teensy, ESP8266, ESP32, Raspberry Pi Pico, and more.
--    Configurable sample rate, usually in powers of two (16384 Hz, 32768 Hz, 64536 Ht).
+-    Configurable sample rate, usually in powers of two (16384 Hz, 32768 Hz, 64536 Hz).
 -    Variable control rate from 64 Hz upwards.
 -    Various inbuilt output modes, including 16 bit output to an external DAC.
 -    Allows interfacing to custom output routines, with examples for playing audio on external DAC modules, and even bluetooth.
@@ -76,6 +76,9 @@ The easiest installation option nowadays is to install Mozzi via the Library Man
 _Arduino➞Sketch➞Include Library➞Library Manager_ type "Mozzi" into the search field, then click "install".
 
 For other installation methods (e.g. the development version), see the [Download page](https://sensorium.github.io/Mozzi/download).
+
+### Dependencies
+Starting in version 2.0, Mozzi requires [FixMath](https://github.com/tomcombriat/FixMath) to be installed. If you install Mozzi via the Library Manager of Arduino, FixMath should be automatically installed. 
 
 ## Quick Start
 To hear Mozzi, wire a 3.5mm audio jack with the centre to the audio out pin for your Arduino as shown in the table below, and the shield to GND on the Arduino.
